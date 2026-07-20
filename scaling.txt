@@ -1,0 +1,5 @@
+Scaler	        |  Uses	                      |  Best When
+
+StandardScaler	|  Mean & Standard Deviation  |	 Data is approximately normally distributed; many ML algorithms benefit from standardized features
+MinMaxScaler	|  Minimum & Maximum	      |  No major outliers; need values in a fixed range like 0–1
+RobustScaler	|  Median & IQR	              |  Dataset contains many outliers

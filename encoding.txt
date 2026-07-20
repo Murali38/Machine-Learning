@@ -1,0 +1,27 @@
+LabelEncoder - It is used to converts categorical values into integer labels. It is mainly used for the target variable or for ordinal categories where the order matters.
+
+Low → 0
+Medium → 1
+High → 2
+
+OneHotEncoder - It is used converts categorical features into multiple binary columns. It is used for nominal data where there is no order among categories.
+
+Red Blue Green
+
+1    0     0
+0    1     0
+0    0     1
+
+OrdinalEncoder - It is used when categories have a meaningful order, such as Small, Medium, and Large.
+
+Small   ->   0
+Medium  ->   1
+Large   ->   2
+
+Target Encoding - It is used to replaces each category with the average target value. It is useful when there are many unique categories.
+
+City 
+
+Delhi       ->   0.82
+Mumbai      ->   0.67
+Bangalore   ->   0.75
