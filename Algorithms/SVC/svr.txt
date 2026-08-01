@@ -1,0 +1,2 @@
+Super Vector Regressor
+It is not used in Real-Time Scenario bcz SVM is used for classification Scenario
