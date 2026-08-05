@@ -1,0 +1,60 @@
+Q.How to find data is linear or not by using scatterplot?
+sol : If the relation between x and y follows the straight line pattern then the data is linear
+
+=> If the relation between x and y doesnot follows the straight line pattern then the data is Non-linear 
+
+Linear Regression ?
+sol : It is the supervisied learning regression algorithm it learns pattern by finding best fit line (straight line) to understand relationship between independent and dependent column
+
+SYNTAX -> from sklearn.linear_model import LinearRegression
+
+When to use Linear Regression ?
+sol : If the data is linear and strongly co-related
+      If the output column is having continuous value
+    
+When Not to use LR?
+sol : If the data is non-linear and weekly co-related
+      Output column is not having continuous value
+
+why not to use LR for Non-Linear Data?
+sol : It understands the pattern of straight line and in non-linear data there is no straight line pattern which leads to the wrong prediction
+
+straight line -> y = mx+c
+
+y=predicted output
+x=new input
+m=slope or coefficient
+c=intercept
+
+what is slope?
+sol : Rate of change of y wrt x bby 1 unit
+
+what is weight?
+sol : Tells importance of features
+
+what is intercept?
+sol : base or initial value of y when x=0
+
+                                        Regression Metrics (which are common for all the regression algorithm)
+
+1. mean squared error (MSE) : When there is less outliers in target column we use MSE
+                              If there are more outliers then we shouldnot use this if used then more error will get
+                              For model training and model evaluation
+
+2. mean absoulte error (MAE) : when there are more outliers or errors we use MAE because it tells the truth
+                               It measures the average prediction errors
+                               calculates the average absolute difference between actual and predicted values
+                               Lower MSE = Better model
+                               for model evaluation
+                        
+3. root mean squared error (RMSE) : It is the square-root of the MSE
+                                    we use it bcz it converts the error back to its original unit
+                                    Lower RMSE = Better model
+                                    for model evaluation
+
+4. R^2 score : It is a regression metrics that tells how well the model captures
+               Evaluates the goodness of fit
+               1 → Perfect model
+               0 → Model explains no variance
+               Negative → Model is worse than predicting the mean
+

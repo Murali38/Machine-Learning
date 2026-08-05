@@ -1,0 +1,70 @@
+Logistic Regression : It is a supervisied learning technique which comes under regression and used for classification scenario
+
+Q.What is classification model ?
+sol : It is a supervisied learning technique whihc predicts the categorical values
+
+ex : Spam Detection - Here classification algorithm predicts categorical values
+     Sentiment Analysis - Here classification algorithm predicts +ve,-ve and netural labels
+    
+Q.How to select algorithms
+sol : If the target column values are categorical then we use classification algorithms
+      Internally Logistic regression use sigmoid functions 
+
+> If the value is >=0.5 then it is considerd as 1
+> If the value is <=0.5 then it is considerd as 0
+> Sigmoid functions always gives values between 0 and 1
+> Sigmoid functions can be applied on binary class labels (target column values)
+
+Q. Why it is called Regression even though we use it for classification ?
+sol : Bcz internally it uses regression formula
+
+How the weights are calculated in Logistic Regression ?
+sol : first randomly it initializes the values between 0 and 0.5
+      Later with the help of Gradient Descent it finds the best weights 
+
+what are the techniques Logistic regression used noramlly
+
+1.Loss Function - It measures the error per record
+2.Cost Function - It measures over all model mistakes internally it uses log loss to measure
+3.Sigmoid Function  - It classifies the binary class labels between 0 and 1
+4.Regularization
+5.Gradient Descent
+
+4.Regularization - It is ML technique which helps to reduces the varience with the help of penalty (L1,L2,Elastic Net)
+
+*** If the model is not well generalized means it is not able to capture the unseen data pattern (overfit) then we use Regularization to solve the problem
+
+There are 3 penalties
+1. L1 - Lasso
+2. L2 - Ridge
+3. Elastic Net - L1+L2
+
+1.Lasso (L1) : It is Regularization penalty which select the important features by pushing weights towards 0 or exactly towards 0
+               If the weight is 0 which means that feature column is not important
+               with the help of Gradient Descent Lasso pushes weights towards 0
+
+Q.when to use Lasso ?
+1.For sentence based classification
+2.When we dont know the important features
+3.when we have more features
+
+2.Ridge (L2): It is Regularization penalty which selects all the features columns by shrinking the weights
+              It shrinks the weights but never pushes the weights towards the 0
+            
+Q.When to use Ridge ?
+1.when all feature columns are important
+2.when Multi-linearity problem occurs
+
+3.Elastic Net (L1+L2) : It is Regularization penalty which uses both L1 and L2
+                        It selects all the feature columns and handles Multi-linearity problem
+                        It uses L1 ratio splits the ratio of L1 and L2
+------------------------------------
+
+5.Gradient Descent : It is an optmization technique which is used to find the best weights
+
+Q.When we use Gradient Descent ?
+
+1.Logistic Regression - It internally uses GD to find the best weights 
+2.Extreme Gradient Boosting Algorithm (XG Boost) uses GD to find the best weights
+3.Regularization - It is ML technique which helps to reduces the varience with the help of penalty (L1,L2,Elastic Net)
+                   It uses GD to find best weights and reduces varience

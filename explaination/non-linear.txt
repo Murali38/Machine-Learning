@@ -1,0 +1,65 @@
+Non-linear data ?
+sol : If the linear regression is used for non-linear data then model will predict straight line but error between predicted and actual data will be very high
+      so we cannot directly use LR on non-linear data
+    
+How to handle non-linear data ?
+
+1.polynomial regression - It is not an algorithm it is an pre-processing technique
+2.Tree Based Algorithm
+    - Decision Tree
+    - Rabdom Forest
+    - XG Boost
+
+polynomial regression : It is a pre-processing technique which helps to handle non-linear data pattern by adding extra features with the help of degree
+
+polynomial features - we use for only features columns (fit_transform() and transform())
+
+degree (1) - linear regression (mx+c)
+degree (2) - m1x1+m2x2+c
+
+poly.fit_transform(xtrain)  - updated xtrain
+poly.transform(xtets)
+
+1.Here fit learns the pattern from xtrain and xtets then add extra features based on degree
+2.If x contains 1 column and degree is 3 then fit creates 2 extra features 
+3.but these features are empty values are filled by the transform
+4.once we update the xtrain we should updated the xtest (updated_xtest=poly.transform(xtest))
+5.Bcz when we use fit_transform the features will be added to the xtrain so we need to updated xtest for equal number os features
+
+                                            Model Evaluation
+
+1.Under-fit : we can say that a model is under-fit if it has low accuracy/performance on both train and test data
+            "here high bias" which means model cannot captures the complex patterns only work with simple patterns 
+            ex : applying linear regression on non-linear data when model fit captures the complex patterns
+
+2.Good-fit : Model learns the training pattern well and also predicts well on test data
+             Good performance on both train and test data
+
+3.Over-fit : Performs well on train but bad on test Data
+             This is bcz model learns pattern well on seen data but doesnot performs well on unseen data 
+             If the correlation between the feature column is very high then it is a problem that can be called as "Multi-linearity"
+
+When Multi-linearity occurs ?
+sol : when model faces overfit model fails on generalization
+
+"Generalization" : How the model is going to perform on unseen data
+
+Multi-linearity can be handled using two techniques
+
+1.PCA (Principle Component Analysis)
+2.Regularization
+
+
+ex :
+
+   |f1   | f2     | f3      |  f4
+f1 | 1   | 0.2    | 0.8     | 0.5
+f2 | 0.2 | 1      | 0.9     | 0.3
+f3 | 0.8 | 0.9    | 1       | 0.95
+f4 | 0.5 | 0.3    | 0.95    | 1
+
+> Every feature is 100% correlated with itself, so the diagonal is always 1
+> Here the target column has strong relation with features columns
+> but f3 is also dependent on f2 and f1 strongly
+> here this result is Multi-linearity
+> which if used in training will result in overfitting and bad generalization
