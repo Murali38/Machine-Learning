@@ -1,0 +1,10 @@
+KNN (K-Nearest Number) - It is a supervisied learning algorithm which is used for both classification and regression
+                         It uses distance formula to predict output - i.Eulidean ii.Manhathon
+                         It is a lazy algorithm bcz during training it stores the algorithm not learns the pattern
+
+Note : During prediction it uses Eulidean and Manhathon distance formula to find the nearest neighbour
+       If it is a regression then it will take the average of closest neighbour and for classification prediction it takes majority
+       For complex data with more features collumns use Manhathon distance formula
+       Scaling technique is required before KNN bcz it is useful to give best accuracy
+       It is suitable for small-medium dataset
+    

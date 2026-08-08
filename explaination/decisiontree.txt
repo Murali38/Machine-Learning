@@ -1,0 +1,42 @@
+Decision Tree : It is an supervisied learning which is used for both classification and regression
+                It makes the prediction by asking series of questions
+
+Advantages of Decision Tree
+* It handles Non-linear data
+* It handles mixed columns like categorical and numerical types
+* scaling technique is not required in the tree-based algorithm
+
+Dis-Advantages of Decision Tree
+* We will not use Decision Tree in real time because it will overfit
+
+-> Root Node
+-> Sub or Interval Node
+-> Leaf Node
+-> split
+-> Purity and Impurity
+
+* Purity - Node containing same class labels then it is said to be Purity 
+           EX : Leaf Node
+* Impurity - Node containing different class labels then it is said to be Impurity
+             Ex : Root or Interval Node
+
+Parameters : 
+
+1.criterion - It is used to select best node and best split 
+              Two Types - 1.entropy 2.gini
+
+2.splitter - It is used to split the data by selecting the split values
+             Two Types - 1.best 2.random
+             If it uses the best splitter then it uses criterion to choose the best split value
+             If it uses random splitter then it uses random values
+
+3.max_depth = None/int -> By default None
+              It controls the depth of the tree
+              we use it when we have more No.of samples
+
+4.min_sample_split - 2/int -> It always splits 2
+                     It checks No.of samples in the dataset if the dataset has more No.of samples than the min sample split then it splits the nodes
+
+5.min_sample_leaf - 2/int -> By default 2
+                    It checks whether node labels are greater than min sample leaf or not
+                    If it is true then it is valid tree otherwise it is not a valid tree

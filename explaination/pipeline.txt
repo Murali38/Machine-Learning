@@ -1,0 +1,18 @@
+Pipeline : It combines multiple steps like preprocessing and algorithms
+           It executes steps one by one (sequentially)
+
+syntax : from sklearn.Pipeline import Pipeline
+         main_pipeline=Pipeline(
+            steps=[
+                ('name','step')
+            ]
+         )
+
+Note : we can use Pipeline technique only for regression algorithm and when we are using only one preprocessing technique
+       Pipeline will execute step by step
+       If we want to use multiple preprocessing techniques then we need to use ColumnTransformer along with the Pipeline
+
+Note : we should not use multiple preprocessing technique in ColumnTransformer for same columns
+       Bcz it will create new columns for same feature columns once again
+       in ColumnTransformer every transformer is InDependent
+

@@ -1,0 +1,34 @@
+GridSearchCV - It is Hyper-Parameter Technique which balances the bias and varience by selecting the best paramete values
+
+Q.Why we need to use ?
+sol : To select the best parameter value bcz manual tuining will take more time so we use GridSearchCV
+
+Note : model__max_depth should be used bcz it will search for max_depth in pipeline but it is actually present inside the model
+
+Q.How CV works internally ?
+sol : CV = 5
+      First it will split the samples equally (F1,F2,F3,F4,F5)
+      Then at last remaining samples will be assigned to last fold (F5)
+
+F1 -> CV  (Training - 80 % and Testing - 20 %)
+
+CV_1 -> Train (F1,F2,F3,F4) and Test (F5)
+CV_2 -> Train (F1,F3,F4,F5) and Test (F2)
+CV_3 -> Train (F1,F2,F4,F5) and Test (F3)
+CV_4 -> Train (F1,F2,F4,F5) and Test (F4)
+CV_5 -> Train (F2,F3,F4,F5) and Test (F1)
+
+Parameters : n_jobs - It uses all cpu cores  (All cpu cores works at a time)
+             verbose - It tells or gives the information about th egridsearch fit
+                       we can use it when we are using n_jobs = 1 or 2
+
+*** INTERVIEW
+
+Q.Explain Bias-Varience Trade-off ?
+sol : It means how we are balancing the bias ans varience
+      we can balance both bias and varience with the help of GridSearchCV
+
+Note : When we have small dataset we use higher CV value (cv=10)
+       When we have large dataset we use lower CV value (CV=3)
+       CV = 5 is moderate we can use that for any types of datasets
+

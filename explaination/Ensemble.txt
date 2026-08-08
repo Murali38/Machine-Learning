@@ -1,0 +1,61 @@
+Ensemble Technique : It is ML technique which uses multiple algorithms to improve the model performance
+
+Types of Ensemble Technique : 1.Bagging
+                              2.Boosting
+
+Q.when we use Ensemble Technique ?
+sol : when Decision Tree is not performing well  
+
+1.Bagging : It is an Ensemble technique which uses 100 DecisionTree by defaultand executes all the trees parallely
+            we use this when DecisionTree becomes overfit
+            It reduces the varience
+
+Q.What is Random Forest ?
+sol : It is a supervisied learning algorithm which comes under bagging ensemble technique and we use this for both classification and regression
+
+Q.How Random Forest works ?
+step 1 : It creates 100 DecisionTree
+step 2 : It creates random samples for all 100 trees using Boot strapping sampling
+step 3 : It parallely trains all the 100 trees (Here the trees are independents)
+
+Q.How Random Forest predicts output ?
+sol : For classification it takes majority of all DecisionTree
+      For Regression it takes average of all DecisionTree
+    
+Q.when not to use Random Forest ?
+sol : * when DecisionTree is under-fit we should not use DecisionTree
+        Bcz it uses Bagging technique which reduces the varience not the bias
+      * For larger dataset we should not use Random Forest
+        Bcz it takes more time and depth of the tree will be more
+
+Parameters : max_samples : 0.8/0.9
+             By using this parameter we can assign random parameters to all the trees
+
+2.Boosting : It is an ensemble technique which uses multiple DecisionTree which is used for both classification and regression 
+             we use boosting when DecisionTree becomes under-fit
+             It reduces the bias
+             It executes step by step (sequentially)
+
+XGBOOST : It stands for Extreme Gradient Boosting Algorithm
+          It comes under Boosting ensemble technique
+
+** Techniques which are used Internally
+    1.Regularization
+    2.Gradient Descent
+
+Advantages of XGBOOST
+1.Scaling technique is not required
+2.It handles missing values
+3.It handles categorical columns
+4.It handles both high varience and high bias 
+5.It works well with larger datasets
+
+Note : Here trees are dependent on one other (step by step)
+       XGBOOST - uses sigmoid for binary classifier
+       SoftMax - uses for multi-class labels in XGBOOST
+
+Q.When we use XGBOOST ?
+sol : 1.while training the XGBOOST model it will reduce the previous model mistakes to reduce the bias 
+      2.when we have more No.of samples and large dataset we use XGBOOST
+      3.XGBOOST also reduces high varience bcz it uses Regularization and Gradient Descent techniques internally
+
