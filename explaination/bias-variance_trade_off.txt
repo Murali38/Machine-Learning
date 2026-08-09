@@ -1,0 +1,9 @@
+Q.Explain Bias - Varience Trade off
+
+sol : Bias - Varience Trade off means how we are balancing bias and varience
+      we can balance both bias and vaience with the help of GridSearchCV
+
+Note : when we have small dataset we use higher cv values (cv = 10)
+       If we have larger datasets then we use smaller cv value (cv = 3)
+
+       cv = 5 is moderate we can use this for any type of dataset

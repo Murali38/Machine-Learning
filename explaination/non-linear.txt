@@ -20,7 +20,7 @@ degree (2) - m1x1+m2x2+c
 poly.fit_transform(xtrain)  - updated xtrain
 poly.transform(xtets)
 
-1.Here fit learns the pattern from xtrain and xtets then add extra features based on degree
+1.Here fit learns the pattern from xtrain and xtest then add extra features based on degree
 2.If x contains 1 column and degree is 3 then fit creates 2 extra features 
 3.but these features are empty values are filled by the transform
 4.once we update the xtrain we should updated the xtest (updated_xtest=poly.transform(xtest))

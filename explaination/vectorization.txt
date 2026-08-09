@@ -1,0 +1,24 @@
+Vectorization : It is a ML preprocessing Technique which converts sentence based columns into numerical columns
+
+There are 2 types
+i.Count Vectorizer
+ii. TF-IDF Vectorizer
+
+i.Count Vectorizer : It is a vectorization preprocessing Technique which converts sentence into numerical using word frequency
+
+Q.How Count Vectorizer works ? 
+step 1 : Collect all the unit (words)
+step 2 : sort by alphabetic order
+step 3 : create new columns based on the alphabetic ordered words
+
+Q.Where we use Count Vectorizer ?
+sol : we use this for small projects and small datasets
+      In real time we don't use this bcz 0 and 1 does not have any meaning
+
+Note : It accepts only one column to transform the values 
+       If we pass 2 or more columns then we get errors
+
+2.TF-IDF Vectorizer : It stands for Term-Frequency Inverse Document Frequency
+                      It is a preprocessing Technique which converts sentence into numbers using TF-IDF 
+
+* For classification scenario we use this vectorization preprocessing Technique

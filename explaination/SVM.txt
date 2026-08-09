@@ -1,0 +1,41 @@
+SVM : It is a super-visied learning algorithm which is used for both classification and regression
+      but mainly we use this for classification
+
+Q.When we use SVM ? 
+sol : when No.of features are greater than the No.of samples then we use SVM
+      In real time we use this for image-based classification
+
+-> Diagram Scenario - 1
+* Support vectors (boundary points) which helps to create the boundary lines for classifying
+* SVM allows model mistakes to increase the model performance
+* The distance between biundary lines and straight line is called marginal distance
+* If the values appear between boundary and straight line then they are considered as errors
+* If the errors are not allowed then model becomes over-fit
+* If the marginal distance is wide then algorithm allows more errors hence model will become underfit
+* If the marginal distance is small no erros will be allowed hence model becomes overfit
+* To control the boundary lines of class labels we use parameter 'C' ( C -> 0.01,0.1,1.0,10,100 )
+* The whole area covering boundary lines and straight lines is called Hyperplane
+
+Scenario -2 (Non - linearly seperable)
+* SVM uses kernel parameter -> seperates Non-linearly seperable data
+
+kernel : It converts 2D -> 3D
+* By increasing the dimension it will handle the Non-linearly seperable data
+
+kernel has 4 values : i.linear
+                      ii.poly
+                      iii.rbf (default) - It handles complex data
+                      iv.sigmoid
+
+Note : During prediction SVM uses only support vector 
+       It uses the formula for prediction w^Tx+b ( w -> weight, x -> new input, b -> bias)
+
+Disadvantages : It will not work well on the complex data
+
+***** Note : For SVM scaling preprocessing Technique is required
+
+Q.When it is text based classification which algorithm we can use ?
+sol : i.Logistic regression
+      ii.SVM
+      iii.Multinomial Navie Bayes
+
