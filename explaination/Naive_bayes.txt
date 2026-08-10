@@ -1,0 +1,14 @@
+Navie Bayes : It is super-visied learning algorithm which is used for classification scenario and it uses probability  to predict the class labels based on highest probability
+
+Navie - Assumption , Bayes - It uses Bayes Theroem to predict the output (Based on highest probability)
+
+3 Types of Navie Bayes : i.MultiNomial Navie Bayes - For sentence based classification we use this
+                        ii.BerNoulli Navie Bayes - When the feature column having binary values 
+                       iii.Gaussian Navie Bayes - When the feature columns having continuous values
+
+Note : For sentence based classification we use : i.SVM
+                                                 ii.MultiNomial Navie Bayes
+                                                iii.Logistic Regression
+
+* It will calculate the probability values during Model Training
+* But actual calculation begins at Model prediction

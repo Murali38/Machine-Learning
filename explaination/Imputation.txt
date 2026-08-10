@@ -1,0 +1,12 @@
+Imputation : It is a preprocessing Technique which is used to handle missing values with the help of parameter strategy
+
+* strategy has 4 values : i.mean
+                         ii.median
+                        iii.most_frequent
+                         iv.constant
+
+Note : when the strategy is constant then we should use fill_vaues ( 0,Unknown )
+       If we dont use fill_values then it will raise errors
+
+
+* we can use this in columntransformer before using scaling and encoding Technique

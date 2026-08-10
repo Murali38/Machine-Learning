@@ -8,7 +8,7 @@ sol : when No.of features are greater than the No.of samples then we use SVM
 -> Diagram Scenario - 1
 * Support vectors (boundary points) which helps to create the boundary lines for classifying
 * SVM allows model mistakes to increase the model performance
-* The distance between biundary lines and straight line is called marginal distance
+* The distance between boundary lines and straight line is called marginal distance
 * If the values appear between boundary and straight line then they are considered as errors
 * If the errors are not allowed then model becomes over-fit
 * If the marginal distance is wide then algorithm allows more errors hence model will become underfit
@@ -34,7 +34,7 @@ Disadvantages : It will not work well on the complex data
 
 ***** Note : For SVM scaling preprocessing Technique is required
 
-Q.When it is text based classification which algorithm we can use ?
+Q.For text based classification which algorithm we can use ?
 sol : i.Logistic regression
       ii.SVM
       iii.Multinomial Navie Bayes

@@ -1,0 +1,30 @@
+Re-Sampling : * It is a preprocessing Technique by adding or removing the samples it balances the data
+              * we use this only for training data
+
+Q.what are the algorithms we need for balancing the data ?
+sol : i.SVC (class_weight='balanced)
+     ii.Logistic Regression (class_weight'balanced)
+    iii.Re-Sampling
+
+Two types : i.Undersampling
+           ii.Oversampling
+
+i.undersampling : It is resampling preprocessing Technique which removes the samples randomly from majority class labels to balance the data
+ex : 0) 1000
+     1) 9000
+* Here we cannot do undersampling bcz we will loose more samples
+
+Parameter -> sampling_strategy = float (accepts only floats) It uses formula internally minority samples / majority new samples
+
+Note : we use sampling_strategy when the difference between the class labels are huge
+       we should use sampling_strategy between 0.2 - 0.5
+       If we use above 0.5 then we would loose more samples
+
+ii.Oversampling : It is resampling preprocessing Technique which adds the samples to balance the data
+ex : 0) 100000
+     1) 100
+
+SMOTE : Synthatic Minority Oversampling Technique
+      * Internally it uses KNN distance formula
+      * we use SMOTE when all the feature columns are numeric columns
+

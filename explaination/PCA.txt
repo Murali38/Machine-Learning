@@ -1,0 +1,18 @@
+PCA : * It stands for principle component analysis
+      *  It is a preprocessing Technique which comes under dimensionality reduction it reduces the dimensions using vairence
+
+PCA can be used in 2 scenarios : i.preprocessing Technique
+                                ii.2D visualzation
+
+* It will not remove the features instead it will create the features by reducing dimensions based on n_components and vairence
+
+Q.When do we use PCA ?
+sol : * when multi-colinearity problem occurs
+      * for 2D visualzation
+      * when we have more number of features
+      * when model becomes overfit (high varience) and it reduces the varience
+      * for direction-based algorithms it uses scaling Technique
+
+Q.When not to use PCA ?
+sol : * after encoding the categorical columns
+

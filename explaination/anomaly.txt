@@ -1,0 +1,10 @@
+Anomaly Detection : These are unusual patterns which are away from the actual data /patterns
+
+Isolation Forest : * It is an un-supervisied learning algorithm which comes under ensemble Technique which is used to detect the anomalies
+                   * It uses 100 decision tree by default 
+                   * It isolates the anomalies
+                   * It returns 2 values ( -1 , +1 )
+                   * -1 -> Anomaly
+                   * +1 -> Normal
+                   * It takes Average of all the values depth level/path
+                   

@@ -1,0 +1,22 @@
+kmeans clustering : It is an un-supervisied learning algorithm which comes under clustering Technique and groups similar patterns by using euclidean distance formula
+
+clustering : grouping of smiliar patterns 
+
+k - No.of clusters 
+mean - Average
+
+Note : Before Training the model we should assign k value 
+
+* If we dont known the k value then we need to use Elbow method to find the best k value
+
+* Centriod - Center of the cluster
+
+Q.Why Centriod ?
+sol : If we know the Centriod then it will be easy to group the clusters
+
+Q.How it works ?
+
+step 1 : Randomly select the Centriods
+step 2 : Create the new Centriods using mean 
+step 3 : Repeat the step 1 and step 2 untill we get the same groups 
+
